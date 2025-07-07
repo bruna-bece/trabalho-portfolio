@@ -49,9 +49,9 @@ header {
   color: #c29628;
   font-weight: bold;
   font-size: 18px;
-  background-color: #f5f0e6;  /* Borda visível */
-  padding: 8px 16px;           /* Espaço interno para parecer botão */
-  border-radius: 6px;          /* Cantos arredondados (opcional) */
+  background-color: #f5f0e6;  
+  padding: 8px 16px;           
+  border-radius: 6px;          
   transition: 0.3s;  
 }
 
@@ -78,4 +78,40 @@ header {
   background-color: #ffffff;
   color: #BE3455;
   margin-top: 40px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  font-weight: bold;
+  color: #BE3455;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #BE3455;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #a52c47;
 }
