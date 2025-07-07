@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Bruna Becegatto</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <header>
+    <div id="meuNome">
+      <h1>Bruna <span class="destaque">Becegatto</span></h1>
+    </div>
+    <div id="minhaFoto">
+      <img src="minhaFoto.png" alt="Bruna e Roma" width="500">
+    </div>
+  </header>
+
+  <nav id="menu">
+    <a href="#" onclick="mostrarSecao('sobre')">Quem sou eu</a>
+    <a href="#" onclick="mostrarSecao('curriculo')">Currículo</a>
+    <a href="#" onclick="mostrarSecao('contato')">Contato</a>
+  </nav>
+
+  <!-- SEÇÕES: agora todas escondidas no início -->
+<section id="sobre" class="secao">
+  <h2>Quem sou eu</h2>
+  <p>Sou Bruna Becegatto e tenho mais de 13 anos de experiência nas áreas de Marketing e Comunicação.Atualmente estou buscando complementar e potencializar os meus conhecimentos por meio do estudo de Análise e Desenvolvimento de Sistemas e quem sabe trilhar uma transição de carreira. 
+  </p>
+</section>
+
+<section id="curriculo" class="secao">
+  <h2>Currículo</h2>
+    <p>Formada em Comunicação Institucional com MBA em Marketing e Mestrado em Gestão da Informação.</p> <br>
+  <p> Este site foi desenvolvido para o trabalho do primeiro semestre do curso de ADS, com conhecimentos básicos de HTML, CSS e JavaScript.</p>
+</section>
+
+<section id="contato" class="secao">
+  <h2>Contato</h2>
+  <p>Email: brubecegatto@gmail.com<br>Telefone: (41) 99790-5250</p>
+</section>
+
+  <footer id="footer">
+    Todos os direitos reservados - Bruna Becegatto
+  </footer>
+
+  <script>
+    function mostrarSecao(id) {
+      const secoes = document.querySelectorAll('.secao');
+      secoes.forEach(secao => secao.classList.remove('ativa'));
+
+      document.getElementById(id).classList.add('ativa');
+    }
+  </script>
+</body>
+</html>

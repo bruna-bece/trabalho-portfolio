@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  background-color: #f5f0e6;
+  flex-wrap: wrap;
+}
+
+#meuNome h1 {
+  font-size: 100px;
+  color: #BE3455;
+}
+
+.destaque {
+  color: #ffffff;
+  background-color: #BE3455;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+#minhaFoto img {
+    padding: 5px;
+  border-radius: 12px;
+  max-width: 100%;
+}
+
+/* Menu */
+#menu {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+#menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #c29628;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #f5f0e6;  /* Borda visível */
+  padding: 8px 16px;           /* Espaço interno para parecer botão */
+  border-radius: 6px;          /* Cantos arredondados (opcional) */
+  transition: 0.3s;  
+}
+
+#menu a:hover {
+  color: #BE3455;
+  }
+
+/* Seções (conteúdo) */
+.secao {
+  display: none;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.secao.ativa {
+  display: block;
+}
+
+/* Rodapé */
+#footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #BE3455;
+  margin-top: 40px;
+}
